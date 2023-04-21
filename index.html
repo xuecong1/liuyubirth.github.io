@@ -38,9 +38,26 @@
 	</style>
 </head>
 <body>
-	<h1>happy birthday liu yu!</h1>
+	<audio id="bgm" loop>
+	<source src="path\to\audio.mp3" type="audio/mpeg">
+	</audio>
+	<h1>happy birthday to liu yu!</h1>
 	<img src="https://i.hd-r.cn/108226602bda0fb7097986375bb26c05.jpg" alt="liu yu">
 	<p>愿你的每一个日子都能阳光明媚，事事顺心如意！</p>
 	<p>有一个美好的新年，在静谧祥和中度过。</p>
+	<button onclick="playAudio()">播放音乐</button>
+	<button onclick="pauseAudio()">暂停音乐</button>
+
+	<script>
+		var audio = document.getElementById("bgm");
+
+		function playAudio() {
+			audio.play();
+		}
+
+		function pauseAudio() {
+			audio.pause();
+		}
+	</script>
 </body>
 </html>
